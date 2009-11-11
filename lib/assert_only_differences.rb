@@ -21,6 +21,8 @@ class Test::Unit::TestCase
 #	class_inheritable_accessor :ignore_differences
 #	class_inheritable_accessor :add_differences
 
+	#	can't extend the normal way that I'm used to because of 
+	#	these cattr_accessor calls ...
 	cattr_accessor :ignore_differences
 	cattr_accessor :add_differences
 
@@ -39,6 +41,10 @@ class Test::Unit::TestCase
 		assert_differences(all_differences.to_a) do
 			yield
 		end
+	end
+
+	def reset_default_differences
+		@@default_differences = {}
 	end
 
 private
