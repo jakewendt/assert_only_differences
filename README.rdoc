@@ -22,3 +22,10 @@ Use me like so ...
     do_something_that_should_not_change_anything_except_my_stuff();
   }
 
+== FYI
+
+This will soon be included in my assert_this_and_that gem/plugin.
+It will remain here as well, but will probably fall into 
+disrepair and incompatibility.
+
+Copyright (c) 2008 [Jake Wendt], released under the MIT license
